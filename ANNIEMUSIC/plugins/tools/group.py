@@ -5,16 +5,16 @@ from config import OWNER_ID
 # vc on
 @app.on_message(filters.video_chat_started)
 async def brah(_, msg):
-       await msg.reply("ᴠᴏɪᴄᴇ ᴄʜᴀᴛ sᴛᴀʀᴛᴇᴅ")
+       await msg.reply("**𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝒯𝑜 𝒯𝒽𝑒 𝒟𝒾𝓋𝒾𝓃𝑒 𝒲𝑜𝓇𝓁𝒹**")
 # vc off
 @app.on_message(filters.video_chat_ended)
 async def brah2(_, msg):
-       await msg.reply("**ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴇɴᴅᴇᴅ**")
+       await msg.reply("**𝒯𝒽𝒶𝓃𝓀𝓈 𝐹𝑜𝓇 𝐸𝓃𝒿𝑜𝓎𝒾𝓃𝑔**")
 
 # invite members on vc
 @app.on_message(filters.video_chat_members_invited)
 async def brah3(app :app, message:Message):
-           text = f"{message.from_user.mention} ɪɴᴠɪᴛᴇᴅ "
+           text = f"{message.from_user.mention} 𝐼𝓃𝓋𝒾𝓉𝑒𝒹 𝒯𝑜 𝒞𝒽𝑒𝓇𝒾𝓈𝒽 "
            x = 0
            for user in message.video_chat_members_invited.users:
              try:
