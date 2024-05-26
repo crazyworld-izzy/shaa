@@ -40,7 +40,7 @@ async def home_stats(client, CallbackQuery, _):
     )
 
 
-@app.on_callback_query(filters.regex("TopOverall") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("ღ TopOverall ღ") & ~BANNED_USERS)
 @languageCB
 async def overall_stats(client, CallbackQuery, _):
     await CallbackQuery.answer()
