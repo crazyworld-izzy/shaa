@@ -16,7 +16,7 @@ def setting_markup(_):
             InlineKeyboardButton(text=_["ST_B_4"], callback_data="VM"),
         ],
         [
-            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
+            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="ღ close ღ"),
         ],
     ]
     return buttons
@@ -44,7 +44,7 @@ def vote_mode_markup(_, current, mode: Union[bool, str] = None):
                 text=_["BACK_BUTTON"],
                 callback_data="settings_helper",
             ),
-            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
+            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="ღ close ღ"),
         ],
     ]
     return buttons
@@ -67,7 +67,7 @@ def auth_users_markup(_, status: Union[bool, str] = None):
                 text=_["BACK_BUTTON"],
                 callback_data="settings_helper",
             ),
-            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
+            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="ღ close ღ"),
         ],
     ]
     return buttons
@@ -106,7 +106,7 @@ def playmode_users_markup(
                 text=_["BACK_BUTTON"],
                 callback_data="settings_helper",
             ),
-            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
+            InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="ღ close ღ"),
         ],
     ]
     return buttons
@@ -192,7 +192,7 @@ def video_quality_markup(
                 callback_data="settingsback_helper",
             ),
             InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"], callback_data="close"
+                text=_["CLOSE_BUTTON"], callback_data="ღ close ღ"
             ),
         ],
     ]
