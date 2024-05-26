@@ -9,16 +9,16 @@ SUPPORT_CHAT = "BWANDARLOK"
 @app.on_message(filters.command("wish"))
 async def wish(_, m):
     if len(m.command) < 2:
-        await m.reply("ᴀᴅᴅ ᴡɪꜱʜ ʙᴀʙʏ🥀!")
+        await m.reply("ᴀᴅᴅ ᴡɪꜱʜ ʙᴀʙʏ𓆩♡𓆪!")
         return 
 
     api = requests.get("https://nekos.best/api/v2/happy").json()
     url = api["results"][0]['url']
     text = m.text.split(None, 1)[1]
     wish_count = random.randint(1, 100)
-    wish = f"✨ ʜᴇʏ! {m.from_user.first_name}! "
-    wish += f"✨ ʏᴏᴜʀ ᴡɪꜱʜ: {text} "
-    wish += f"✨ ᴘᴏꜱꜱɪʙʟᴇ ᴛᴏ: {wish_count}%"
+    wish = f"𓆩♡𓆪 ʜᴇʏ! {m.from_user.first_name}! "
+    wish += f"𓆩♡𓆪 ʏᴏᴜʀ ᴡɪꜱʜ: {text} "
+    wish += f"𓆩♡𓆪 ᴘᴏꜱꜱɪʙʟᴇ ᴛᴏ: {wish_count}%"
     
     await app.send_animation(
         chat_id=m.chat.id,
@@ -29,7 +29,7 @@ async def wish(_, m):
     )
             
     
-BUTTON = [[InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}")]]
+BUTTON = [[InlineKeyboardButton("ღ ꜱᴜᴘᴘᴏʀᴛ ღ", url=f"https://t.me/{SUPPORT_CHAT}")]]
 CUTIE = "https://telegra.ph/file/528d0563175669e123a75.mp4"
 
 @app.on_message(filters.command("cute"))
