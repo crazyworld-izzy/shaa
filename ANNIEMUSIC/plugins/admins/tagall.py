@@ -161,7 +161,7 @@ TAGMES = [ " உண்மை END என்றால் முடிவு என
 
            ]
 
-@app.on_message(filters.command(["tagall"], prefixes=["/","!"]))
+@app.on_message(filters.command(["shaa"], prefixes=["/","!"]))
 async def mentionall(client, message):
     chat_id = message.chat.id
     if message.chat.type == ChatType.PRIVATE:
